@@ -18,6 +18,14 @@
             {
                 "title": "Reddit",
                 "link": "https://www.reddit.com"
+            },
+            {
+                "title": "Reddit2",
+                "link": "https://www.reddit.com"
+            },
+            {
+                "title": "Reddit3",
+                "link": "https://www.reddit.com"
             }
         ]
     },
@@ -76,14 +84,6 @@
             {
                 "title": "Twitter",
                 "link": "www.twitter.com"
-            },
-            {
-                "title": "Instagram",
-                "link": "www.instagram.com"
-            },
-            {
-                "title": "Reddit",
-                "link": "www.reddit.com"
             }
         ]
     }

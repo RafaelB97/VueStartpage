@@ -2,7 +2,7 @@
   <div class="group">
     <h3>{{ group.title }}</h3>
     <ul>
-      <li v-for="bookmark in group.bookmarks" :key="bookmark" >
+      <li v-for="bookmark in group.bookmarks" :key="bookmark.title" >
         <a :href="bookmark.link">{{ bookmark.title }}</a>
       </li>
     </ul>
@@ -17,10 +17,10 @@ export default {
 
 <style scoped>
 .group {
-  margin: 10px;
   background: grey;
   padding: 10px;
   border-radius: 15px;
+  /* flex-grow: 1; */
 }
 
 h3 {
