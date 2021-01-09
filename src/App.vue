@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <Clock />
       <Groups :groups='groups' />
     </div>
     <!-- {{ groups }} -->
@@ -10,11 +11,13 @@
 <script>
 import groups from './groups'
 import Groups from './components/Groups'
+import Clock from './components/Clock'
 
 export default {
   name: 'App',
   components: {
-    Groups
+    Groups,
+    Clock
   },
   data() {
     return {
