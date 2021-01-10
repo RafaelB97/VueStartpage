@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div class="container">
-      <Clock />
-      <Groups :groups='groups' />
+    <header>
+      <h1>Hello</h1>
+    </header>
+    <div class="main">
+      <div class="container">
+        <Clock />
+        <Groups :groups='groups' />
+      </div>
+      <!-- {{ groups }} -->
     </div>
-    <!-- {{ groups }} -->
   </div>
 </template>
 
@@ -32,9 +37,14 @@ body {
   margin: 0;
   padding: 0;
 }
-#app {
-  width: 100vw;
-  height: 100vh;
+
+header {
+  height: 10%;
+}
+
+.main {
+  width: 100%;
+  height: 90%;
   background: lightcoral;
   display: flex;
   align-items: center;
@@ -43,7 +53,7 @@ body {
 
 .container {
   background: lightgreen;
-  width: 65vw;
+  width: 65%;
   padding: 15px;
 }
 </style>
