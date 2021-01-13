@@ -6,7 +6,7 @@
     <div class="main">
       <div class="container">
         <Clock />
-        <Groups :groups='groups' />
+        <Groups />
       </div>
       <!-- {{ groups }} -->
     </div>
@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import groups from './groups'
 import Groups from './components/Groups'
 import Clock from './components/Clock'
 
@@ -23,11 +22,6 @@ export default {
   components: {
     Groups,
     Clock
-  },
-  data() {
-    return {
-      groups,
-    }
   }
 }
 </script>

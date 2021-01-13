@@ -1,18 +1,21 @@
 <template>
   <div class="groups">
-    <GroupItem v-for="group in groups" :key="group.id" :group="group"/>
+    <GroupItem v-for="group in allGroups" :key="group.id" :group="group"/>
   </div>
 </template>
 
 <script>
 import GroupItem from './GroupItem'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'Groups',
   components: {
     GroupItem
   },
-  props: [ 'groups' ]
+  computed: {
+    ...mapGetters([ 'allGroups' ])
+  }
 }
 </script>
 
